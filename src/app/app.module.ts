@@ -6,17 +6,27 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule} from '@angular/material/button';
+import { ContactComponent } from './contact/contact.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatCardModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
