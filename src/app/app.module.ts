@@ -11,13 +11,20 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule} from '@angular/material/button';
 import { ContactComponent } from './contact/contact.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {MatIconModule} from '@angular/material/icon';
+import { FooterComponent } from './shared/footer/footer.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { OurWorkComponent } from './our-work/our-work.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     NavbarComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent,
+    AboutUsComponent,
+    OurWorkComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +33,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatToolbarModule,
     MatButtonModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
