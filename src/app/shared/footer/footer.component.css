@@ -1,7 +1,8 @@
 footer {
-  background-color: #0D47A1;
-  border-top: 1px solid #bbb;
+  background-color: white;
   text-align: center;
-  color: white;
+  color: black;
   font-family: Roboto;
+  border-top-style: solid;
+  border-top-color: #0D47A1;
 }

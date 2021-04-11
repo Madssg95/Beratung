@@ -17,6 +17,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { OurWorkComponent } from './our-work/our-work.component';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import {FormsModule} from '@angular/forms';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import {FormsModule} from '@angular/forms';
     FlexLayoutModule,
     MatIconModule,
     ClipboardModule,
-    FormsModule
+    FormsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -21,8 +21,8 @@
         <label>0151/20746910</label>
         <br>
         <br>
-        <button mat-button [cdkCopyToClipboard]="phonevalue">
-          <mat-icon [inline]="true" style="font-size: xx-large">pending_actions</mat-icon>
+        <button mat-button [cdkCopyToClipboard]="phonevalue" (click)="openSnackBar('Telefonnummer erfolgreich kopiert','Schließen')">
+          <mat-icon [inline]="true" style="font-size: xx-large">content_copy</mat-icon>
         </button>
         <br>
         <br>
@@ -44,8 +44,8 @@
         <label>info@betterperforming.de</label>
         <br>
         <br>
-        <button mat-button [cdkCopyToClipboard]="emailvalue">
-          <mat-icon [inline]="true" style="font-size: xx-large">pending_actions</mat-icon>
+        <button mat-button [cdkCopyToClipboard]="emailvalue" (click)="openSnackBar('E-Mail erfolgreich kopiert','Schließen')">
+          <mat-icon [inline]="true" style="font-size: xx-large">content_copy</mat-icon>
         </button>
         <br>
         <br>
