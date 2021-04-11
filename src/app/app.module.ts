@@ -18,6 +18,8 @@ import { OurWorkComponent } from './our-work/our-work.component';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import {FormsModule} from '@angular/forms';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatMenuTrigger} from '@angular/material/menu';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatIconModule,
     ClipboardModule,
     FormsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,14 +1,14 @@
 <div class="navbar">
 <mat-toolbar style="background-color: white">
 
-  <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-around center" >
+  <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-around center" fxHide.md fxHide.sm fxHide.xs>
 
-      <button mat-button style="font-size: xx-large; font-family: 'Allerta Stencil', Sans-serif, serif" routerLink="/welcome">Beratung Better Performing
+      <button mat-button style="font-size: xx-large; font-family: 'Allerta Stencil', Sans-serif, serif" routerLink="/start">Beratung Better Performing
         </button>
 
   </mat-toolbar-row>
 
-  <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-around center" style="border-bottom: #0D47A1">
+  <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-around center" style="border-bottom: #0D47A1" fxHide.md fxHide.sm fxHide.xs>
     <div fxFlex="30"></div>
         <button mat-button style="font-size: large" routerLink="/start">Start</button>
         <button mat-button style="font-size: large" routerLink="/über-uns">Über uns</button>
@@ -16,5 +16,23 @@
         <button mat-button style="font-size: large" routerLink="/kontakt">Kontakt</button>
     <div fxFlex="30"></div>
   </mat-toolbar-row>
+
+  <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center" style="border-bottom: #0D47A1" fxHide fxShow.md fxShow.sm fxShow.xs>
+
+    <button mat-button style="font-size: xx-large; font-family: 'Allerta Stencil', Sans-serif, serif" routerLink="/start">Beratung Better Performing
+    </button>
+
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/start">Start</button>
+    <button mat-menu-item routerLink="/über-uns">Über uns</button>
+    <button mat-menu-item routerLink="/wie-wir-arbeiten">Wie wir arbeiten</button>
+    <button mat-menu-item routerLink="/kontakt">Kontakt</button>
+  </mat-menu>
+
+  </mat-toolbar-row>
+
 </mat-toolbar>
 </div>

@@ -1,13 +1,18 @@
-<div class="container" style="background-color: #0D47A1">
+<div class="container" fxLayoutAlign="center center" style="background-color: #0D47A1; color: white; font-family: Roboto; font-size: xx-large; min-height: 100px">
+  Wir freuen uns auf einen ersten Austausch mit Ihnen!
+</div>
 
-  <p fxLayoutAlign="center center" style="background-color: #0D47A1; color: white; font-family: Roboto; font-size: xx-large; min-height: 100px">Kontaktieren Sie uns</p>
+<div class="innerContainer" fxLayoutAlign="center center" style="background-color: #0D47A1; color: white; font-family: Roboto; font-size: xx-large; min-height: 100px">
+  So erreichen Sie uns:
+</div>
 
-  <div class="wrapper" style="overflow: hidden" fxLayoutAlign="space-around center">
+<div class="innerContainer" style="background-color: #0D47A1">
+  <div class="wrapper" style="overflow: hidden; flex-direction: row; box-sizing: border-box; display: flex; flex: 1 1 0%;" fxLayoutAlign="space-around center" fxFlex fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+
+
     <div fxFlex="10"></div>
 
-
-
-    <div>
+    <div fxLayout="column" fxLayoutAlign="center center">
       <div class="circle">
         <mat-icon [inline]="true" style="font-size: 100px">phone_in_talk</mat-icon>
       </div>
@@ -31,9 +36,9 @@
       </div>
     </div>
 
-    <div>
+    <div fxLayout="column" fxLayoutAlign="center center">
       <div class="circle">
-        <mat-icon [inline]="true" style="font-size: 100px">email</mat-icon>
+        <mat-icon [inline]="true" style="font-size: 100px;">email</mat-icon>
       </div>
       <div style="text-align: center; margin-top: 10px; background-color: #0D47A1; font-family: Roboto; color: white; font-size: x-large">
         <br>
