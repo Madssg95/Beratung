@@ -1,21 +1,20 @@
-<mat-toolbar color="primary">
+<div class="navbar">
+<mat-toolbar style="background-color: white">
 
-  <mat-toolbar-row>
+  <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-around center" >
 
-    <div fxLayout="row" fxFlexAlign="center center">
-      <div fxLayout="row" fxLayoutAlign="stretch" fxLayoutGap="50px">
-
-        <button mat-button style="font-size: x-large" routerLink="/welcome">Beratung Better Performing
-          <mat-icon [inline]="true" style="font-size: xx-large">trending_up</mat-icon>
+      <button mat-button style="font-size: xx-large; font-family: 'Allerta Stencil', Sans-serif, serif" routerLink="/welcome">Beratung Better Performing
         </button>
 
+  </mat-toolbar-row>
+
+  <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-around center" style="border-bottom: #0D47A1">
+    <div fxFlex="30"></div>
         <button mat-button style="font-size: large" routerLink="/start">Start</button>
         <button mat-button style="font-size: large" routerLink="/über-uns">Über uns</button>
         <button mat-button style="font-size: large" routerLink="/wie-wir-arbeiten">Wie wir arbeiten</button>
         <button mat-button style="font-size: large" routerLink="/kontakt">Kontakt</button>
-
-      </div>
-    </div>
-
+    <div fxFlex="30"></div>
   </mat-toolbar-row>
 </mat-toolbar>
+</div>

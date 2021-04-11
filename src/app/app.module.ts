@@ -15,6 +15,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { FooterComponent } from './shared/footer/footer.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { OurWorkComponent } from './our-work/our-work.component';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { OurWorkComponent } from './our-work/our-work.component';
     MatButtonModule,
     MatCardModule,
     FlexLayoutModule,
-    MatIconModule
+    MatIconModule,
+    ClipboardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

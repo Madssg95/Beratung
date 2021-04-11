@@ -1,1 +1,64 @@
-<p>contact works!</p>
+<div class="container" style="background-color: #0D47A1">
+
+  <p fxLayoutAlign="center center" style="background-color: #0D47A1; color: white; font-family: Roboto; font-size: xx-large; min-height: 100px">Kontaktieren Sie uns</p>
+
+  <div class="wrapper" style="overflow: hidden" fxLayoutAlign="space-around center">
+    <div fxFlex="10"></div>
+
+
+
+    <div>
+      <div class="circle">
+        <mat-icon [inline]="true" style="font-size: 100px">phone_in_talk</mat-icon>
+      </div>
+
+      <div style="text-align: center; margin-top: 10px; background-color: #0D47A1; font-family: Roboto; color: white; font-size: x-large">
+        <br>
+        <br>
+        <label>Telefon</label>
+        <br>
+        <br>
+        <label>0151/20746910</label>
+        <br>
+        <br>
+        <button mat-button [cdkCopyToClipboard]="phonevalue">
+          <mat-icon [inline]="true" style="font-size: xx-large">pending_actions</mat-icon>
+        </button>
+        <br>
+        <br>
+        <br>
+
+      </div>
+    </div>
+
+    <div>
+      <div class="circle">
+        <mat-icon [inline]="true" style="font-size: 100px">email</mat-icon>
+      </div>
+      <div style="text-align: center; margin-top: 10px; background-color: #0D47A1; font-family: Roboto; color: white; font-size: x-large">
+        <br>
+        <br>
+        <label>E-Mail</label>
+        <br>
+        <br>
+        <label>info@betterperforming.de</label>
+        <br>
+        <br>
+        <button mat-button [cdkCopyToClipboard]="emailvalue">
+          <mat-icon [inline]="true" style="font-size: xx-large">pending_actions</mat-icon>
+        </button>
+        <br>
+        <br>
+        <br>
+
+      </div>
+    </div>
+
+    <div fxFlex="10"></div>
+
+  </div>
+
+
+
+
+</div>
